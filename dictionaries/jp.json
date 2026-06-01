@@ -1,0 +1,379 @@
+{
+    "__COMMENT_AUTH__": "---------- 認証セクション ----------",
+    "auth": {
+        "already_have_account": "すでにアカウントをお持ちですか？",
+        "login_button": "ログイン",
+        "register_button": "新規登録"
+    },
+    "__COMMENT_LOGIN__": "---------- ログインセクション ----------",
+    "login": {
+        "title": "おかえりなさい",
+        "subtitle": "車両メンテナンスダッシュボードにアクセスします",
+        "label_email": "メールアドレス",
+        "placeholder_email": "name@domain.com",
+        "label_password": "パスワード",
+        "placeholder_password": "パスワードを入力してください",
+        "remember_me": "ログイン状態を保持する",
+        "forgot_password": "パスワードをお忘れですか？",
+        "submit_button": "サインイン",
+        "divider": "または以下で継続",
+        "no_account": "アカウントをお持ちでないですか？",
+        "signup_link": "CarHistorialに登録する"
+    },
+    "__COMMENT_REGISTER__": "---------- 新規登録セクション ----------",
+    "register": {
+        "title": "アカウント作成",
+        "subtitle": "今すぐ車両管理を始めましょう",
+        "label_name": "氏名",
+        "placeholder_name": "山田 太郎",
+        "label_email": "メールアドレス",
+        "placeholder_email": "name@domain.com",
+        "label_password": "パスワード",
+        "placeholder_password": "パスワード",
+        "placeholder_repeat_password": "パスワード（確認用）",
+        "terms_text": "私は以下に同意します：",
+        "terms_link": "利用規約",
+        "submit_button": "アカウントを作成する",
+        "social_or": "または以下で登録",
+        "benefit1_title": "リアルタイム診断",
+        "benefit1_desc": "高度なスキャンとエンジンのライブデータモニタリング。",
+        "benefit2_title": "安全な経費追跡",
+        "benefit2_desc": "領収書や交換部品の写真を保存して、記録を常に最新の状態に保ちます。",
+        "benefit3_title": "24時間年中無休のアクセス",
+        "benefit3_desc": "必要な時に、必要な場所で、いつでも情報にアクセスできます。",
+        "benefit4_title": "簡単なアクセス",
+        "benefit4_desc": "紙の書類を紛失する心配はもうありません。",
+        "benefit5_title": "タイムリーなメンテナンス",
+        "benefit5_desc": "コンポーネントの交換や点検の時期が来ると通知を受け取れます。"
+    },
+    "footer": {
+        "secure": "安全な決済"
+    },
+    "__COMMENT_LANDING__": "---------- ランディングページセクション ----------",
+    "landing": {
+        "nav_features": "機能",
+        "nav_benefits": "メリット",
+        "nav_pricing": "料金プラン",
+        "hero_title": "愛車をいつでも万全な状態に",
+        "hero_subtitle": "個人車両やフリート（社用車）のメンテナンス追跡、スマートアラート、書類管理のための総合プラットフォーム。",
+        "cta_main": "今すぐ無料で始める",
+        "cta_demo": "デモを見る",
+        "social_proof": "すでに2,000人以上のドライバーに信頼されています",
+        "features_tag": "機能",
+        "features_title": "必要なものすべてを1つの場所に",
+        "features_desc": "車両管理のあらゆる側面を最適化し、ドライバーが運転だけに集中できるようにします。",
+        "footer_desc": "こだわりを持つドライバーや現代的なフリートのための、スマートな車両メンテナンス管理ソフトウェア。",
+        "all_rights": "All rights reserved."
+    },
+    "features": {
+        "history_title": "履歴の追跡",
+        "history_desc": "すべての修理やサービスの完全なデジタル記録。紙の整備手帳はもう不要です。",
+        "alerts_title": "スマートアラート",
+        "alerts_desc": "走行距離や期間に基づいた、オイル、タイヤ、車検の自動リマインダー。",
+        "docs_title": "書類管理",
+        "docs_desc": "保険証券、免許証、技術書類を安全に保管。どこからでもアクセス可能です。"
+    },
+    "pricing": {
+        "main_title": "すべてのドライバーのためのプラン",
+        "free_name": "無料プラン",
+        "pro_name": "プロ",
+        "ent_name": "エンタープライズ",
+        "feat_1_veh": "1台の車両",
+        "feat_3_veh": "最大3台の車両",
+        "feat_unlimited": "車両台数無制限",
+        "feat_basic": "基本的な履歴の記録",
+        "feat_alerts": "スマートアラート",
+        "feat_docs": "書類用クラウドストレージ",
+        "feat_api": "API連携",
+        "btn_choose": "プランを選択する",
+        "btn_contact": "営業へのお問い合わせ"
+    },
+    "__COMMENT_DASHBOARD__": "---------- ダッシュボードセクション ----------",
+    "dashboard": {
+        "sidebar": {
+            "brand": "CarHistorial",
+            "sub": "管理＆追跡",
+            "role": "フリートマネージャー",
+            "add_btn": "車両を追加",
+            "upload_btn": "書類をアップロード"
+        },
+        "menu": {
+            "dashboard": "メインダッシュボード",
+            "history": "履歴",
+            "vehicles": "車両一覧",
+            "docs": "書類管理",
+            "settings": "設定"
+        },
+        "header": {
+            "title": "概要",
+            "subtitle": "42台の車両のリアルタイムステータス"
+        },
+        "vehicle_info": {
+            "model": "Tesla Model 3",
+            "vin_label": "VIN",
+            "vin_value": "5YJ3E1EA6LFXXXXXX"
+        },
+        "actions": {
+            "add": "車両を追加",
+            "export": "エクスポート",
+            "add_record": "記録を追加",
+            "view_mode": "表示モード",
+            "sort": "並び替え"
+        },
+        "search": {
+            "placeholder": "書類を検索..."
+        },
+        "docs_vault": {
+            "title": "書類",
+            "subtitle": "以下のデジタル記録",
+            "new_folder": "新規フォルダ",
+            "new_file": "新規書類",
+            "dropzone_title": "ここに書類をドラッグ＆ドロップ",
+            "dropzone_subtitle": "またはクリックして選択 (PDF, JPG, PNG 最大10MB)",
+            "categories": {
+                "insurance": "保険",
+                "registration": "車検証・登録証",
+                "service": "整備領収書",
+                "warranty": "保証書"
+            }
+        },
+        "stats": {
+            "expenses": "月間経費",
+            "mileage": "走行距離",
+            "health": "フリートの状態",
+            "pending": "保留中",
+            "last_30_days": "過去30日間"
+        },
+        "table": {
+            "placeholder": "履歴を検索...",
+            "export": "エクスポート",
+            "col_id": "ID",
+            "col_service": "サービス内容",
+            "col_km": "キロメートル",
+            "col_cost": "費用",
+            "name": "書類名",
+            "date": "追加日",
+            "size": "サイズ",
+            "actions": "操作"
+        },
+        "storage": {
+            "title": "保管庫の容量",
+            "used": "使用容量",
+            "info": "書類は暗号化され、クラウドに自動でバックアップされます。"
+        },
+        "alerts": {
+            "title": "アクティブなアラート",
+            "critical": "4件の重大な課題",
+            "critical_badge": "重大",
+            "brake": "ブレーキ点検の期限超過",
+            "engine": "エンジン故障",
+            "engine_fail": "エンジン故障",
+            "view_all": "すべて見る",
+            "compliance_title": "コンプライアンスアラート",
+            "ins_expiring": "保険の満了間近",
+            "ins_desc": "残り12日で満了します。新しい保険証券をアップロードしてください。",
+            "reg_verified": "登録確認済み",
+            "reg_desc": "所有権書類は有効です。"
+        },
+        "distribution": {
+            "title": "ステータス分布",
+            "total": "合計",
+            "active": "稼働中",
+            "service": "整備中"
+        },
+        "activity": {
+            "title": "最近のアクティビティ",
+            "service": "整備完了",
+            "returned": "稼働状態に復帰"
+        }
+    },
+    "common": {
+        "edit": "編集",
+        "delete": "削除",
+        "cancel": "キャンセル",
+        "saving": "保存中..."
+    },
+    "settings": {
+        "title": "設定",
+        "subtitle": "言語、ユーザープロファイル、アカウントセキュリティ。",
+        "logout": "ログアウト",
+        "messages": {
+            "saved": "設定を正常に保存しました。",
+            "photo_error": "写真をアップロードできませんでした。"
+        },
+        "language": {
+            "title": "言語"
+        },
+        "distance": {
+            "title": "距離",
+            "label": "距離単位",
+            "km": "キロメートル",
+            "mi": "マイル"
+        },
+        "profile": {
+            "title": "ユーザー管理",
+            "change_photo": "写真を変更",
+            "name": "名前",
+            "email": "メールアドレス",
+            "save": "プロファイルを保存"
+        },
+        "password": {
+            "title": "パスワードの変更",
+            "current": "現在のパスワード",
+            "next": "新しいパスワード",
+            "repeat": "新しいパスワード（確認用）",
+            "save": "パスワードを更新",
+            "min_error": "新しいパスワードは6文字以上である必要があります。",
+            "match_error": "パスワードが一致しません。"
+        }
+    },
+    "history": {
+        "subtitle": "すべての車両のレポート、メンテナンス、油脂類・液類の記録。",
+        "search": "履歴を検索...",
+        "loading": "履歴を読み込み中...",
+        "empty": "指定されたフィルターに一致する記録はありません。",
+        "stats": {
+            "cost": "フィルター後の経費",
+            "distance": "総走行距離",
+            "documents": "書類",
+            "workshop": "整備工場記録"
+        },
+        "filters": {
+            "all_types": "すべてのタイプ",
+            "reports": "レポート",
+            "maintenances": "メンテナンス",
+            "liquids": "油脂類・液類",
+            "all_vehicles": "すべての車両"
+        },
+        "table": {
+            "type": "タイプ",
+            "record": "記録",
+            "vehicle": "車両",
+            "date": "日付",
+            "distance": "距離",
+            "cost": "費用"
+        }
+    },
+    "vehicles": {
+        "title": "車両一覧",
+        "subtitle": "登録されているすべての車両の概要。",
+        "total_label": "合計:",
+        "add_btn": "車両を追加する",
+        "search_placeholder": "メーカーまたはモデルで検索...",
+        "loading": "車両データを読み込み中...",
+        "empty_search": "検索条件に一致する車両は見つかりませんでした。",
+        "confirm_delete": "削除する",
+        "stats": {
+            "mileage": "走行距離"
+        },
+        "fields": {
+            "fuel": "燃料タイプ",
+            "sticker": "排ガスステッカー",
+            "next_itv": "次回車検日",
+            "itv_status": "車検ステータス",
+            "last_itv": "前回車検日"
+        },
+        "fuel": {
+            "diesel": "ディーゼル",
+            "gasolina": "ガソリン",
+            "electrico": "電気 (EV)",
+            "hibrido": "ハイブリッド (HV)",
+            "gas": "ガス・LPG"
+        },
+        "form": {
+            "add_title": "車両を追加する",
+            "edit_title": "車両を編集する",
+            "subtitle": "認証されたアカウントに関連付けられたデータ。",
+            "photo": "車両の写真",
+            "brand": "メーカー",
+            "select_brand": "メーカーを選択...",
+            "plate": "ナンバープレート",
+            "model": "モデル",
+            "mileage": "総走行距離",
+            "sticker": "排ガスステッカー",
+            "fuel": "燃料タイプ",
+            "select_fuel": "燃料を選択...",
+            "last_itv_date": "前回車検日",
+            "save_changes": "変更を保存する",
+            "add_submit": "車両を追加する",
+            "errors": {
+                "save": "車両の保存中にエラーが発生しました。",
+                "brand": "車両のメーカーを選択してください。",
+                "plate": "車両のナンバープレートを入力してください。",
+                "model": "車両のモデルを入力してください。",
+                "fuel": "燃料タイプを選択してください。",
+                "mileage": "総走行距離は0以上の数値で入力してください。",
+                "itv_invalid": "前回車検日の形式が正しくありません。",
+                "itv_future": "前回車検日に未来の日付を指定することはできません。"
+            }
+        }
+    },
+    "vehicleDetail": {
+        "fallbackTitle": "車両詳細",
+        "back": "車両一覧に戻る",
+        "emptyPlate": "ナンバープレートなし",
+        "quickActions": "クイックアクション",
+        "actions": {
+            "addLiquid": "油脂・液類を追加",
+            "addDocument": "書類を追加",
+            "addMaintenance": "メンテナンスを追加",
+            "addFolder": "フォルダを作成",
+            "save": "保存"
+        },
+        "sections": {
+            "liquids": "油脂類・液類",
+            "documents": "書類",
+            "maintenance": "メンテナンス",
+            "folders": "フォルダ"
+        },
+        "empty": {
+            "liquids": "登録された油脂・液類はありません",
+            "documents": "登録された書類はありません",
+            "maintenance": "登録されたメンテナンスはありません",
+            "folders": "作成されたフォルダはありません"
+        },
+        "forms": {
+            "liquid": "油脂・液類を追加",
+            "document": "書類を追加",
+            "maintenance": "メンテナンスを追加",
+            "folder": "フォルダを作成"
+        },
+        "fields": {
+            "name": "名称",
+            "type": "タイプ",
+            "attachment": "添付ファイル",
+            "productName": "製品名",
+            "liquidType": "液類タイプ",
+            "changeKm": "交換予定距離",
+            "changeKmDone": "交換実施距離",
+            "changeTime": "交換周期（期間）",
+            "currentChangeDate": "今回交換日",
+            "path": "パス",
+            "title": "タイトル",
+            "cost": "費用",
+            "date": "日付",
+            "changeDate": "交換日",
+            "folder": "フォルダ",
+            "component": "部品・コンポーネント",
+            "description": "説明",
+            "km": "Km"
+        },
+        "errors": {
+            "liquidName": "製品名を入力してください。",
+            "liquidType": "液類のタイプを指定してください。",
+            "km": "距離は0以上の数値で入力してください。",
+            "datePast": "交換日に未来の日付を指定することはできません。",
+            "documentTitle": "書類のタイトルを入力してください。",
+            "cost": "費用は0以上の数値で入力してください。",
+            "component": "交換した部品を入力してください。"
+        },
+        "labels": {
+            "documents": "個の書類"
+        },
+        "messages": {
+            "saved": "正常に保存されました。",
+            "error": "保存できませんでした。",
+            "folderLinkPending": "書類が保存されました。APIからIDが返されたら、フォルダ内からリンクしてください。"
+        }
+    }
+}

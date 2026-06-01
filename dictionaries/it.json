@@ -1,0 +1,379 @@
+{
+    "__COMMENT_AUTH__": "---------- SEZIONE AUTENTICAZIONE ----------",
+    "auth": {
+        "already_have_account": "Hai già un account?",
+        "login_button": "Accedi",
+        "register_button": "Registrati"
+    },
+    "__COMMENT_LOGIN__": "---------- SEZIONE ACCESSO ----------",
+    "login": {
+        "title": "Bentornato",
+        "subtitle": "Accedi al pannello di manutenzione del tuo veicolo",
+        "label_email": "Indirizzo e-mail",
+        "placeholder_email": "nome@dominio.com",
+        "label_password": "Contraseña",
+        "placeholder_password": "Inserisci la tua password",
+        "remember_me": "Ricordami",
+        "forgot_password": "Hai dimenticato la password?",
+        "submit_button": "Accedi",
+        "divider": "o continua con",
+        "no_account": "Non hai un account?",
+        "signup_link": "Registrati su CarHistorial"
+    },
+    "__COMMENT_REGISTER__": "---------- SEZIONE REGISTRAZIONE ----------",
+    "register": {
+        "title": "Crea un account",
+        "subtitle": "Inizia a gestire il tuo veicolo oggi stesso",
+        "label_name": "Nome completo",
+        "placeholder_name": "Mario Rossi",
+        "label_email": "Indirizzo e-mail",
+        "placeholder_email": "nome@dominio.com",
+        "label_password": "Contraseña",
+        "placeholder_password": "Contraseña",
+        "placeholder_repeat_password": "Ripeti password",
+        "terms_text": "Accetto i",
+        "terms_link": "Termini di Servizio",
+        "submit_button": "Crea account",
+        "social_or": "o registrati con",
+        "benefit1_title": "Diagnostica in tempo reale",
+        "benefit1_desc": "Scansione avanzata e monitoraggio dei dati del motore dal vivo.",
+        "benefit2_title": "Tracciamento sicuro delle spese",
+        "benefit2_desc": "Salva le foto di ricevute e pezzi di ricambio per mantenere i tuoi registri aggiornati.",
+        "benefit3_title": "Accesso 24/7",
+        "benefit3_desc": "Le tue informazioni sono disponibili dove e quando ne hai bisogno.",
+        "benefit4_title": "Facile accesso",
+        "benefit4_desc": "Non preoccuparti mai più di perdere i tuoi documenti cartacei.",
+        "benefit5_title": "Manutenzione puntuale",
+        "benefit5_desc": "Ricevi notifiche quando è il momento di sostituire o controllare i componenti."
+    },
+    "footer": {
+        "secure": "Pagamento Sicuro"
+    },
+    "__COMMENT_LANDING__": "---------- SEZIONE LANDING PAGE ----------",
+    "landing": {
+        "nav_features": "Funzionalità",
+        "nav_benefits": "Vantaggi",
+        "nav_pricing": "Prezzi",
+        "hero_title": "Mantieni il tuo veicolo sempre a punto",
+        "hero_subtitle": "La piattaforma completa per il monitoraggio della manutenzione, avvisi intelligenti e gestione documentale della tua flotta o del tuo veicolo personale.",
+        "cta_main": "Inizia Gratis ora",
+        "cta_demo": "Vedi Demo",
+        "social_proof": "Più di 2.000 conducenti si affidano già a noi",
+        "features_tag": "Funzionalità",
+        "features_title": "Tutto ciò di cui hai bisogno in un unico posto",
+        "features_desc": "Ottimizziamo ogni aspetto della gestione del tuo veicolo in modo che tu debba preoccuparti solo di guidare.",
+        "footer_desc": "Software intelligente per la gestione della manutenzione dei veicoli per conducenti esigenti e flotte moderne.",
+        "all_rights": "Tutti i diritti riservati."
+    },
+    "features": {
+        "history_title": "Tracciamento Cronologia",
+        "history_desc": "Registro digitale completo di tutte le riparazioni e i servizi effettuati. Dimentica il libretto cartaceo.",
+        "alerts_title": "Avvisi Intelligenti",
+        "alerts_desc": "Promemoria automatici basati su chilometraggio o tempo per olio, pneumatici e revisione.",
+        "docs_title": "Gestione Documentale",
+        "docs_desc": "Archivia in modo sicuro assicurazioni, patenti e documenti tecnici. Accedi da qualsiasi luogo."
+    },
+    "pricing": {
+        "main_title": "Piani per tutti i conducenti",
+        "free_name": "Gratuito",
+        "pro_name": "Pro",
+        "ent_name": "Enterprise",
+        "feat_1_veh": "1 Veicolo",
+        "feat_3_veh": "Fino a 3 veicoli",
+        "feat_unlimited": "Flotta illimitata",
+        "feat_basic": "Registrazione base della cronologia",
+        "feat_alerts": "Avvisi Intelligenti",
+        "feat_docs": "Cloud per i documenti",
+        "feat_api": "Integrazione API",
+        "btn_choose": "Scegli Piano",
+        "btn_contact": "Contatta le Vendite"
+    },
+    "__COMMENT_DASHBOARD__": "---------- SEZIONE DASHBOARD ----------",
+    "dashboard": {
+        "sidebar": {
+            "brand": "CarHistorial",
+            "sub": "Gestisci e Traccia",
+            "role": "Gestore della Flotta",
+            "add_btn": "Aggiungi Veicolo",
+            "upload_btn": "Carica Documento"
+        },
+        "menu": {
+            "dashboard": "Pannello Principale",
+            "history": "Cronologia",
+            "vehicles": "Veicoli",
+            "docs": "Documenti",
+            "settings": "Impostazioni"
+        },
+        "header": {
+            "title": "Panoramica",
+            "subtitle": "Stato in tempo reale di 42 veicoli"
+        },
+        "vehicle_info": {
+            "model": "Tesla Model 3",
+            "vin_label": "VIN",
+            "vin_value": "5YJ3E1EA6LFXXXXXX"
+        },
+        "actions": {
+            "add": "Aggiungi Veicolo",
+            "export": "Esporta",
+            "add_record": "Aggiungi Registro",
+            "view_mode": "Modalità Vista",
+            "sort": "Ordina"
+        },
+        "search": {
+            "placeholder": "Cerca nei documenti..."
+        },
+        "docs_vault": {
+            "title": "Documenti",
+            "subtitle": "Registri digitali per",
+            "new_folder": "Nuova Cartella",
+            "new_file": "Nuovo Documento",
+            "dropzone_title": "Trascina e rilascia i documenti qui",
+            "dropzone_subtitle": "O fai clic per cercare (PDF, JPG, PNG fino a 10MB)",
+            "categories": {
+                "insurance": "Assicurazioni",
+                "registration": "Immatricolazione",
+                "service": "Ricevute di Servizio",
+                "warranty": "Garanzia"
+            }
+        },
+        "stats": {
+            "expenses": "Spese Mensili",
+            "mileage": "Chilometraggio",
+            "health": "Salute della Flotta",
+            "pending": "In attesa",
+            "last_30_days": "Ultimi 30 giorni"
+        },
+        "table": {
+            "placeholder": "Cerca nella cronologia...",
+            "export": "Esporta",
+            "col_id": "ID",
+            "col_service": "Servizio",
+            "col_km": "Chilometri",
+            "col_cost": "Costo",
+            "name": "Nome del Documento",
+            "date": "Data Aggiunto",
+            "size": "Dimensione",
+            "actions": "Azioni"
+        },
+        "storage": {
+            "title": "Spazio nella Cassaforte",
+            "used": "Spazio utilizzato",
+            "info": "I tuoi documenti sono crittografati e sottoposti a backup automatico nel cloud."
+        },
+        "alerts": {
+            "title": "Avvisi Attivi",
+            "critical": "4 Critici",
+            "critical_badge": "Critici",
+            "brake": "Servizio Freni Scaduto",
+            "engine": "Guasto al Motore",
+            "engine_fail": "Guasto al Motore",
+            "view_all": "Vedi Tutti",
+            "compliance_title": "Avvisi di Conformità",
+            "ins_expiring": "Assicurazione in scadenza",
+            "ins_desc": "Scade in 12 giorni. Carica la nuova polizza.",
+            "reg_verified": "Immatricolazione Verificata",
+            "reg_desc": "Il documento di proprietà è valido."
+        },
+        "distribution": {
+            "title": "Distribuzione dello Stato",
+            "total": "Totale",
+            "active": "Attivi",
+            "service": "In Servizio"
+        },
+        "activity": {
+            "title": "Attività Recente",
+            "service": "Servizio Completato",
+            "returned": "Ritornato ad Attivo"
+        }
+    },
+    "common": {
+        "edit": "Modifica",
+        "delete": "Elimina",
+        "cancel": "Annulla",
+        "saving": "Salvataggio..."
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "subtitle": "Lingua, utente e sicurezza del tuo account.",
+        "logout": "Disconnettersi",
+        "messages": {
+            "saved": "Impostazioni salvate correttamente.",
+            "photo_error": "Impossibile caricare la foto."
+        },
+        "language": {
+            "title": "Lingua"
+        },
+        "distance": {
+            "title": "Distanza",
+            "label": "Unità di distanza",
+            "km": "Chilometri",
+            "mi": "Miglia"
+        },
+        "profile": {
+            "title": "Gestione Utente",
+            "change_photo": "Cambia foto",
+            "name": "Nome",
+            "email": "E-mail",
+            "save": "Salva profilo"
+        },
+        "password": {
+            "title": "Cambia password",
+            "current": "Attuale",
+            "next": "Nuova",
+            "repeat": "Ripeti",
+            "save": "Aggiorna password",
+            "min_error": "La nuova password deve contenere almeno 6 caratteri.",
+            "match_error": "Le password non coincidono."
+        }
+    },
+    "history": {
+        "subtitle": "Report, manutenzioni e liquidi di tutti i tuoi veicoli.",
+        "search": "Cerca nella cronologia...",
+        "loading": "Caricamento cronologia...",
+        "empty": "Nessun registro trovato con questi filtri.",
+        "stats": {
+            "cost": "Spesa filtrata",
+            "distance": "Distanza totale",
+            "documents": "Documenti",
+            "workshop": "Registri officina"
+        },
+        "filters": {
+            "all_types": "Tutti i tipi",
+            "reports": "Report",
+            "maintenances": "Manutenzioni",
+            "liquids": "Liquidi",
+            "all_vehicles": "Tutti i veicoli"
+        },
+        "table": {
+            "type": "Tipo",
+            "record": "Registro",
+            "vehicle": "Veicolo",
+            "date": "Data",
+            "distance": "Distanza",
+            "cost": "Costo"
+        }
+    },
+    "vehicles": {
+        "title": "Veicoli",
+        "subtitle": "Panoramica di tutti i veicoli registrati.",
+        "total_label": "Totale:",
+        "add_btn": "Aggiungi veicolo",
+        "search_placeholder": "Cerca per marca o modello...",
+        "loading": "Caricamento veicoli...",
+        "empty_search": "Nessun veicolo corrisponde alla ricerca.",
+        "confirm_delete": "Elimina",
+        "stats": {
+            "mileage": "Chilometraggio"
+        },
+        "fields": {
+            "fuel": "Carburante",
+            "sticker": "Bollino ambientale",
+            "next_itv": "Prossima Revisione",
+            "itv_status": "Stato Revisione",
+            "last_itv": "Ultima Revisione"
+        },
+        "fuel": {
+            "diesel": "Diesel",
+            "gasolina": "Benzina",
+            "electrico": "Elettrico",
+            "hibrido": "Ibrido",
+            "gas": "Gpl / Metano"
+        },
+        "form": {
+            "add_title": "Aggiungi veicolo",
+            "edit_title": "Modifica veicolo",
+            "subtitle": "Dati associati al tuo utente autenticato.",
+            "photo": "Foto dell'auto",
+            "brand": "Marca",
+            "select_brand": "Seleziona marca...",
+            "plate": "Targa",
+            "model": "Modello",
+            "mileage": "Chilometri percorsi",
+            "sticker": "Bollino ambientale",
+            "fuel": "Tipo di carburante",
+            "select_fuel": "Seleziona carburante...",
+            "last_itv_date": "Data ultima revisione",
+            "save_changes": "Salva modifiche",
+            "add_submit": "Aggiungi veicolo",
+            "errors": {
+                "save": "Errore durante il salvataggio del veicolo.",
+                "brand": "Seleziona la marca del veicolo.",
+                "plate": "Indica la targa del veicolo.",
+                "model": "Indica il modello del veicolo.",
+                "fuel": "Seleziona il tipo di carburante.",
+                "mileage": "La distanza percorsa deve essere un numero maggiore o uguale a 0.",
+                "itv_invalid": "La data dell'ultima revisione non è valida.",
+                "itv_future": "La data dell'ultima revisione non può essere successiva alla data attuale."
+            }
+        }
+    },
+    "vehicleDetail": {
+        "fallbackTitle": "Veicolo",
+        "back": "Torna ai veicoli",
+        "emptyPlate": "Senza targa",
+        "quickActions": "Azioni rapide",
+        "actions": {
+            "addLiquid": "Aggiungi liquido",
+            "addDocument": "Aggiungi documento",
+            "addMaintenance": "Aggiungi manutenzione",
+            "addFolder": "Crea cartella",
+            "save": "Salva"
+        },
+        "sections": {
+            "liquids": "Liquidi",
+            "documents": "Documenti",
+            "maintenance": "Manutenzioni",
+            "folders": "Cartelle"
+        },
+        "empty": {
+            "liquids": "Nessun liquido registrato",
+            "documents": "Nessun documento registrato",
+            "maintenance": "Nessuna manutenzione registrata",
+            "folders": "Nessuna cartella creata"
+        },
+        "forms": {
+            "liquid": "Aggiungi liquido",
+            "document": "Aggiungi documento",
+            "maintenance": "Aggiungi manutenzione",
+            "folder": "Crea cartella"
+        },
+        "fields": {
+            "name": "Nome",
+            "type": "Tipo",
+            "attachment": "Allegato",
+            "productName": "Nome prodotto",
+            "liquidType": "Tipo liquido",
+            "changeKm": "Km cambio",
+            "changeKmDone": "Km cambio effettuato",
+            "changeTime": "Intervallo cambio",
+            "currentChangeDate": "Data cambio attuale",
+            "path": "Percorso",
+            "title": "Titolo",
+            "cost": "Costo",
+            "date": "Data",
+            "changeDate": "Data cambio",
+            "folder": "Cartella",
+            "component": "Componente",
+            "description": "Descrizione",
+            "km": "Km"
+        },
+        "errors": {
+            "liquidName": "Indica il nome del prodotto.",
+            "liquidType": "Indica il tipo di liquido.",
+            "km": "I chilometri devono essere un numero maggiore o uguale a 0.",
+            "datePast": "La data del cambio non può essere futura.",
+            "documentTitle": "Indica il titolo del documento.",
+            "cost": "Il costo deve essere un numero maggiore o uguale a 0.",
+            "component": "Indica il componente sostituito."
+        },
+        "labels": {
+            "documents": "documenti"
+        },
+        "messages": {
+            "saved": "Salvato correttamente.",
+            "error": "Impossibile salvare.",
+            "folderLinkPending": "Documento salvato. Collegalo dalla cartella non appena l'API restituisce l'ID."
+        }
+    }
+}

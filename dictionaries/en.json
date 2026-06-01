@@ -1,0 +1,379 @@
+{
+    "__COMMENT_AUTH__": "---------- AUTHENTICATION SECTION ----------",
+    "auth": {
+        "already_have_account": "Already have an account?",
+        "login_button": "Log In",
+        "register_button": "Register"
+    },
+    "__COMMENT_LOGIN__": "---------- LOGIN SECTION ----------",
+    "login": {
+        "title": "Welcome back",
+        "subtitle": "Access your vehicle maintenance dashboard",
+        "label_email": "Email address",
+        "placeholder_email": "name@domain.com",
+        "label_password": "Password",
+        "placeholder_password": "Enter your password",
+        "remember_me": "Remember me",
+        "forgot_password": "Forgot your password?",
+        "submit_button": "Sign In",
+        "divider": "or continue with",
+        "no_account": "Don't have an account?",
+        "signup_link": "Sign up on CarHistorial"
+    },
+    "__COMMENT_REGISTER__": "---------- REGISTER SECTION ----------",
+    "register": {
+        "title": "Create Account",
+        "subtitle": "Start managing your vehicle today",
+        "label_name": "Full name",
+        "placeholder_name": "John Doe",
+        "label_email": "Email address",
+        "placeholder_email": "name@domain.com",
+        "label_password": "Password",
+        "placeholder_password": "Password",
+        "placeholder_repeat_password": "Repeat Password",
+        "terms_text": "I accept the",
+        "terms_link": "Terms of Service",
+        "submit_button": "Create Account",
+        "social_or": "or register with",
+        "benefit1_title": "Real-time diagnostics",
+        "benefit1_desc": "Advanced scanning and live engine data monitoring.",
+        "benefit2_title": "Secure expense tracking",
+        "benefit2_desc": "Save photos of receipts and spare parts to keep your records up to date.",
+        "benefit3_title": "24/7 Access",
+        "benefit3_desc": "Your information available whenever and wherever you need it.",
+        "benefit4_title": "Easy access",
+        "benefit4_desc": "Never worry about losing your physical paperwork again.",
+        "benefit5_title": "On-time maintenance",
+        "benefit5_desc": "Receive notifications when it's time to replace or check components."
+    },
+    "footer": {
+        "secure": "Secure Payment"
+    },
+    "__COMMENT_LANDING__": "---------- LANDING PAGE SECTION ----------",
+    "landing": {
+        "nav_features": "Features",
+        "nav_benefits": "Benefits",
+        "nav_pricing": "Pricing",
+        "hero_title": "Keep your vehicle always ready",
+        "hero_subtitle": "The comprehensive platform for maintenance tracking, smart alerts, and document management for your fleet or personal vehicle.",
+        "cta_main": "Start Free Now",
+        "cta_demo": "View Demo",
+        "social_proof": "+2,000 drivers already trust us",
+        "features_tag": "Features",
+        "features_title": "Everything you need in one place",
+        "features_desc": "We optimize every aspect of your vehicle management so you only have to worry about driving.",
+        "footer_desc": "Smart vehicle maintenance management software for demanding drivers and modern fleets.",
+        "all_rights": "All rights reserved."
+    },
+    "features": {
+        "history_title": "History Tracking",
+        "history_desc": "Complete digital record of all repairs and services performed. Forget the physical logbook.",
+        "alerts_title": "Smart Alerts",
+        "alerts_desc": "Automatic reminders based on mileage or time for oil, tires, and MOT.",
+        "docs_title": "Document Management",
+        "docs_desc": "Securely store insurance, licenses, and technical documents. Access them from anywhere."
+    },
+    "pricing": {
+        "main_title": "Plans for all drivers",
+        "free_name": "Free",
+        "pro_name": "Pro",
+        "ent_name": "Enterprise",
+        "feat_1_veh": "1 Vehicle",
+        "feat_3_veh": "Up to 3 Vehicles",
+        "feat_unlimited": "Unlimited Fleet",
+        "feat_basic": "Basic history recording",
+        "feat_alerts": "Smart Alerts",
+        "feat_docs": "Cloud for Documents",
+        "feat_api": "API Integration",
+        "btn_choose": "Choose Plan",
+        "btn_contact": "Contact Sales"
+    },
+    "__COMMENT_DASHBOARD__": "---------- DASHBOARD SECTION ----------",
+    "dashboard": {
+        "sidebar": {
+            "brand": "CarHistorial",
+            "sub": "Manage & Track",
+            "role": "Fleet Manager",
+            "add_btn": "Add Vehicle",
+            "upload_btn": "Upload Document"
+        },
+        "menu": {
+            "dashboard": "Main Dashboard",
+            "history": "History",
+            "vehicles": "Vehicles",
+            "docs": "Documents",
+            "settings": "Settings"
+        },
+        "header": {
+            "title": "Overview",
+            "subtitle": "Real-time status of 42 vehicles"
+        },
+        "vehicle_info": {
+            "model": "Tesla Model 3",
+            "vin_label": "VIN",
+            "vin_value": "5YJ3E1EA6LFXXXXXX"
+        },
+        "actions": {
+            "add": "Add Vehicle",
+            "export": "Export",
+            "add_record": "Add Record",
+            "view_mode": "View Mode",
+            "sort": "Sort"
+        },
+        "search": {
+            "placeholder": "Search documents..."
+        },
+        "docs_vault": {
+            "title": "Documents",
+            "subtitle": "Digital records for",
+            "new_folder": "New Folder",
+            "new_file": "New Document",
+            "dropzone_title": "Drag and drop documents here",
+            "dropzone_subtitle": "Or click to browse (PDF, JPG, PNG up to 10MB)",
+            "categories": {
+                "insurance": "Insurance",
+                "registration": "Registration",
+                "service": "Service Receipts",
+                "warranty": "Warranty"
+            }
+        },
+        "stats": {
+            "expenses": "Monthly Expenses",
+            "mileage": "Mileage",
+            "health": "Fleet Health",
+            "pending": "Pending",
+            "last_30_days": "Last 30 days"
+        },
+        "table": {
+            "placeholder": "Search history...",
+            "export": "Export",
+            "col_id": "ID",
+            "col_service": "Service",
+            "col_km": "Kilometers",
+            "col_cost": "Cost",
+            "name": "Document Name",
+            "date": "Date Added",
+            "size": "Size",
+            "actions": "Actions"
+        },
+        "storage": {
+            "title": "Vault Space",
+            "used": "Used space",
+            "info": "Your documents are encrypted and automatically backed up to the cloud."
+        },
+        "alerts": {
+            "title": "Active Alerts",
+            "critical": "4 Critical",
+            "critical_badge": "Critical",
+            "brake": "Brake Service Overdue",
+            "engine": "Engine Failure",
+            "engine_fail": "Engine Failure",
+            "view_all": "View All",
+            "compliance_title": "Compliance Alerts",
+            "ins_expiring": "Insurance expiring soon",
+            "ins_desc": "Expires in 12 days. Please upload the new policy.",
+            "reg_verified": "Registration Verified",
+            "reg_desc": "Ownership document is valid."
+        },
+        "distribution": {
+            "title": "Status Distribution",
+            "total": "Total",
+            "active": "Active",
+            "service": "In Service"
+        },
+        "activity": {
+            "title": "Recent Activity",
+            "service": "Service Completed",
+            "returned": "Returned to Active"
+        }
+    },
+    "common": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "cancel": "Cancel",
+        "saving": "Saving..."
+    },
+    "settings": {
+        "title": "Settings",
+        "subtitle": "Language, user profile, and account security.",
+        "logout": "Log out",
+        "messages": {
+            "saved": "Settings saved successfully.",
+            "photo_error": "Could not upload the photo."
+        },
+        "language": {
+            "title": "Language"
+        },
+        "distance": {
+            "title": "Distance",
+            "label": "Distance unit",
+            "km": "Kilometers",
+            "mi": "Miles"
+        },
+        "profile": {
+            "title": "User Management",
+            "change_photo": "Change photo",
+            "name": "Name",
+            "email": "Email",
+            "save": "Save profile"
+        },
+        "password": {
+            "title": "Change password",
+            "current": "Current",
+            "next": "New",
+            "repeat": "Repeat",
+            "save": "Update password",
+            "min_error": "The new password must be at least 6 characters long.",
+            "match_error": "Passwords do not match."
+        }
+    },
+    "history": {
+        "subtitle": "Reports, maintenance, and fluids for all your vehicles.",
+        "search": "Search history...",
+        "loading": "Loading history...",
+        "empty": "No records found with those filters.",
+        "stats": {
+            "cost": "Filtered expense",
+            "distance": "Total distance",
+            "documents": "Documents",
+            "workshop": "Workshop records"
+        },
+        "filters": {
+            "all_types": "All types",
+            "reports": "Reports",
+            "maintenances": "Maintenance",
+            "liquids": "Fluids",
+            "all_vehicles": "All vehicles"
+        },
+        "table": {
+            "type": "Type",
+            "record": "Record",
+            "vehicle": "Vehicle",
+            "date": "Date",
+            "distance": "Distance",
+            "cost": "Cost"
+        }
+    },
+    "vehicles": {
+        "title": "Vehicles",
+        "subtitle": "Overview of all registered vehicles.",
+        "total_label": "Total:",
+        "add_btn": "Add vehicle",
+        "search_placeholder": "Search by make or model...",
+        "loading": "Loading vehicles...",
+        "empty_search": "No vehicles match the search criteria.",
+        "confirm_delete": "Delete",
+        "stats": {
+            "mileage": "Mileage"
+        },
+        "fields": {
+            "fuel": "Fuel",
+            "sticker": "Emissions Sticker",
+            "next_itv": "Next MOT",
+            "itv_status": "MOT Status",
+            "last_itv": "Last MOT"
+        },
+        "fuel": {
+            "diesel": "Diesel",
+            "gasolina": "Petrol",
+            "electrico": "Electric",
+            "hibrido": "Hybrid",
+            "gas": "Gas"
+        },
+        "form": {
+            "add_title": "Add vehicle",
+            "edit_title": "Edit vehicle",
+            "subtitle": "Data linked to your authenticated account.",
+            "photo": "Car photo",
+            "brand": "Make",
+            "select_brand": "Select make...",
+            "plate": "License plate",
+            "model": "Model",
+            "mileage": "Kilometers traveled",
+            "sticker": "Emissions sticker",
+            "fuel": "Fuel type",
+            "select_fuel": "Select fuel...",
+            "last_itv_date": "Last MOT date",
+            "save_changes": "Save changes",
+            "add_submit": "Add vehicle",
+            "errors": {
+                "save": "Error saving the vehicle.",
+                "brand": "Please select the vehicle make.",
+                "plate": "Please specify the vehicle license plate.",
+                "model": "Please specify the vehicle model.",
+                "fuel": "Please select the fuel type.",
+                "mileage": "The distance traveled must be a number greater than or equal to 0.",
+                "itv_invalid": "The last MOT date is not valid.",
+                "itv_future": "The last MOT date cannot be later than the current date."
+            }
+        }
+    },
+    "vehicleDetail": {
+        "fallbackTitle": "Vehicle",
+        "back": "Back to vehicles",
+        "emptyPlate": "No license plate",
+        "quickActions": "Quick actions",
+        "actions": {
+            "addLiquid": "Add fluid",
+            "addDocument": "Add document",
+            "addMaintenance": "Add maintenance",
+            "addFolder": "Create folder",
+            "save": "Save"
+        },
+        "sections": {
+            "liquids": "Fluids",
+            "documents": "Documents",
+            "maintenance": "Maintenance",
+            "folders": "Folders"
+        },
+        "empty": {
+            "liquids": "No fluids recorded",
+            "documents": "No documents recorded",
+            "maintenance": "No maintenance recorded",
+            "folders": "No folders created"
+        },
+        "forms": {
+            "liquid": "Add fluid",
+            "document": "Add document",
+            "maintenance": "Add maintenance",
+            "folder": "Create folder"
+        },
+        "fields": {
+            "name": "Name",
+            "type": "Type",
+            "attachment": "Attachment",
+            "productName": "Product name",
+            "liquidType": "Fluid type",
+            "changeKm": "Replacement Km",
+            "changeKmDone": "Replacement Km completed",
+            "changeTime": "Replacement time interval",
+            "currentChangeDate": "Current replacement date",
+            "path": "Path",
+            "title": "Title",
+            "cost": "Cost",
+            "date": "Date",
+            "changeDate": "Replacement date",
+            "folder": "Folder",
+            "component": "Component",
+            "description": "Description",
+            "km": "Km"
+        },
+        "errors": {
+            "liquidName": "Please specify the product name.",
+            "liquidType": "Please specify the fluid type.",
+            "km": "Kilometers must be a number greater than or equal to 0.",
+            "datePast": "The replacement date cannot be in the future.",
+            "documentTitle": "Please specify the document title.",
+            "cost": "The cost must be a number greater than or equal to 0.",
+            "component": "Please specify the component that was replaced."
+        },
+        "labels": {
+            "documents": "documents"
+        },
+        "messages": {
+            "saved": "Saved successfully.",
+            "error": "Could not save.",
+            "folderLinkPending": "Document saved. Link it from the folder once the API returns the ID."
+        }
+    }
+}
