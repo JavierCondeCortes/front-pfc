@@ -98,21 +98,22 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm">
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl p-8 w-full max-w-3xl border border-primary/30">
-                <div className="flex items-start justify-between gap-4 mb-6">
-                    <div>
-                        <h2 className="text-2xl font-black text-primary uppercase tracking-tight">
-                            {isEditing ? t('vehicles.form.edit_title', 'Editar vehiculo') : t('vehicles.form.add_title', 'Agregar vehiculo')}
-                        </h2>
-                        <p className="text-sm text-slate-500 mt-1">{t('vehicles.form.subtitle', 'Datos asociados a tu usuario autenticado.')}</p>
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-black/40 p-4 backdrop-blur-sm sm:p-6">
+            <div className="flex min-h-full items-start justify-center sm:items-center">
+                <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-3xl overflow-y-auto rounded-2xl border border-primary/30 bg-white p-5 shadow-2xl dark:bg-slate-900 sm:my-6 sm:p-8">
+                    <div className="flex items-start justify-between gap-4 mb-6">
+                        <div>
+                            <h2 className="text-2xl font-black text-primary uppercase tracking-tight">
+                                {isEditing ? t('vehicles.form.edit_title', 'Editar vehiculo') : t('vehicles.form.add_title', 'Agregar vehiculo')}
+                            </h2>
+                            <p className="text-sm text-slate-500 mt-1">{t('vehicles.form.subtitle', 'Datos asociados a tu usuario autenticado.')}</p>
+                        </div>
+                        <button type="button" onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700 dark:hover:text-white">
+                            <span className="material-symbols-outlined">close</span>
+                        </button>
                     </div>
-                    <button type="button" onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700 dark:hover:text-white">
-                        <span className="material-symbols-outlined">close</span>
-                    </button>
-                </div>
 
-                <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {formError && <div className="md:col-span-2"><AlertItem type="error" message={formError} /></div>}
 
                     <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 items-center rounded-xl border border-slate-200 dark:border-slate-800 p-4">
@@ -222,7 +223,7 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
                         />
                     </FormField>
 
-                    <div className="md:col-span-2 flex gap-3 justify-end mt-6">
+                    <div className="md:col-span-2 flex flex-col-reverse gap-3 pt-2 sm:flex-row sm:justify-end">
                         <button type="button" onClick={onClose} className="px-6 py-2 text-slate-400 hover:text-slate-600 font-bold text-sm transition-colors uppercase">
                             {t('common.cancel', 'Cancelar')}
                         </button>
@@ -234,7 +235,8 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
                             {loading ? t('common.saving', 'Guardando...') : isEditing ? t('vehicles.form.save_changes', 'Guardar cambios') : t('vehicles.form.add_submit', 'Agregar vehiculo')}
                         </button>
                     </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     );

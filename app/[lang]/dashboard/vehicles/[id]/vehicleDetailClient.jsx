@@ -304,17 +304,18 @@ function FolderContentModal({ folder, resources, t, onClose, onEdit, onDelete })
     }).filter(Boolean);
 
     return (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
-            <div className="w-full max-w-2xl rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
-                <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-start justify-between gap-4">
-                    <div>
-                        <p className="text-xs font-bold uppercase text-slate-400">{t('vehicleDetail.sections.folders', 'Carpetas')}</p>
-                        <h2 className="text-2xl font-black text-slate-900 dark:text-white">{folder.nombre}</h2>
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 p-4 backdrop-blur-sm">
+            <div className="flex min-h-full items-start justify-center sm:items-center">
+                <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-2xl overflow-hidden rounded-xl border border-slate-200 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900">
+                    <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-start justify-between gap-4">
+                        <div>
+                            <p className="text-xs font-bold uppercase text-slate-400">{t('vehicleDetail.sections.folders', 'Carpetas')}</p>
+                            <h2 className="text-2xl font-black text-slate-900 dark:text-white">{folder.nombre}</h2>
+                        </div>
+                        <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700"><span className="material-symbols-outlined">close</span></button>
                     </div>
-                    <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700"><span className="material-symbols-outlined">close</span></button>
-                </div>
 
-                <div className="p-5 space-y-3 max-h-[60vh] overflow-y-auto">
+                    <div className="p-5 space-y-3 max-h-[60vh] overflow-y-auto">
                     {informes.length === 0 && linked.length === 0 && <p className="rounded-lg bg-slate-50 dark:bg-slate-800 p-4 text-sm text-slate-500">No hay recursos vinculados a esta carpeta.</p>}
                     {informes.map((informe) => (
                         <div key={informe.id} className="flex items-center justify-between gap-3 rounded-lg bg-slate-50 dark:bg-slate-800 p-3">
@@ -333,11 +334,12 @@ function FolderContentModal({ folder, resources, t, onClose, onEdit, onDelete })
                             </div>
                         </div>
                     ))}
-                </div>
+                    </div>
 
-                <div className="p-5 border-t border-slate-100 dark:border-slate-800 flex justify-end gap-2">
-                    <button onClick={onEdit} className="rounded-lg bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-bold">Renombrar</button>
-                    <button onClick={onDelete} className="rounded-lg bg-red-50 px-4 py-2 text-sm font-bold text-red-600">Eliminar</button>
+                    <div className="p-5 border-t border-slate-100 dark:border-slate-800 flex justify-end gap-2">
+                        <button onClick={onEdit} className="rounded-lg bg-slate-100 dark:bg-slate-800 px-4 py-2 text-sm font-bold">Renombrar</button>
+                        <button onClick={onDelete} className="rounded-lg bg-red-50 px-4 py-2 text-sm font-bold text-red-600">Eliminar</button>
+                    </div>
                 </div>
             </div>
         </div>

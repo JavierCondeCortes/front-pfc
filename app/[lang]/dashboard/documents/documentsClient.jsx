@@ -375,13 +375,15 @@ function ResourceFolderModal({ documents, liquids, maintenances, folders, onClos
 
 function Modal({ title, children, onClose }) {
     return (
-        <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-sm flex items-center justify-center p-4">
-            <div className="w-full max-w-4xl rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-2xl">
-                <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-4">
-                    <h2 className="text-xl font-black truncate">{title}</h2>
-                    <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700"><span className="material-symbols-outlined">close</span></button>
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 p-4 backdrop-blur-sm">
+            <div className="flex min-h-full items-start justify-center sm:items-center">
+                <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-4xl overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900">
+                    <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-4">
+                        <h2 className="text-xl font-black truncate">{title}</h2>
+                        <button onClick={onClose} className="p-2 text-slate-400 hover:text-slate-700"><span className="material-symbols-outlined">close</span></button>
+                    </div>
+                    <div className="p-5">{children}</div>
                 </div>
-                <div className="p-5">{children}</div>
             </div>
         </div>
     );
