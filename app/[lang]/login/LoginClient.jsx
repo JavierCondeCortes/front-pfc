@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/context/AuthContext';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { loginUser } from '@/lib/api/auth';
 
 export default function LoginClient({ dict, lang }) {
     const router = useRouter();
@@ -24,44 +25,17 @@ export default function LoginClient({ dict, lang }) {
         setLoading(true);
 
         try {
-            const response = await fetch('http://localhost:8080/api/usuarios/login', {
-                method: 'POST',
-                headers: { 
-                    'Content-Type': 'application/json',
-                    'Accept': 'application/json'
-                },
-                body: JSON.stringify({ email, password }),
-            });
+            const data = await loginUser({ email, password });
+            const userData = {
+                ...data.user,
+                token: data.access_token || data.token,
+                remember: rememberMe
+            };
 
-            const rawData = await response.text();
-            let data;
-            try {
-                data = JSON.parse(rawData);
-            } catch {
-                data = { message: rawData };
-            }
-
-            if (response.ok) {
-                // Preparamos el objeto de usuario con el token correcto
-                // Nota: Asegúrate que tu Laravel devuelva 'access_token' o 'token'
-                const userData = {
-                    ...data.user,
-                    token: data.access_token || data.token, 
-                    remember: rememberMe 
-                };
-
-                // Actualizamos el contexto global
-                login(userData); 
-                
-                // Redirigimos manualmente si el login() no lo hace automáticamente
-                router.push(`/${lang}/dashboard/vehicles`);
-                
-            } else {
-                // Mostramos el mensaje que viene del backend o uno por defecto del diccionario
-                setError(data.message || (dict.login && dict.login.error_auth) || "Credenciales incorrectas");
-            }
+            login(userData);
+            router.push(`/${lang}/dashboard/vehicles`);
         } catch (err) {
-            setError("Error de conexión: Verifica que tu servidor Laravel esté encendido.");
+            setError(err.message || "Error de conexión: Verifica que tu servidor Laravel esté encendido.");
             console.error("Login Error:", err);
         } finally {
             setLoading(false);

@@ -1,5 +1,6 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import path from 'node:path';
+import { withBasePath } from '@/lib/paths';
 
 const MAX_FILE_SIZE = 10 * 1024 * 1024;
 const ALLOWED_TYPES = new Set([
@@ -38,7 +39,8 @@ export async function POST(request) {
         await mkdir(uploadDir, { recursive: true });
         await writeFile(path.join(uploadDir, fileName), bytes);
 
-        const url = `/uploads/${folder}/${fileName}`;
+        const storageUrl = `/uploads/${folder}/${fileName}`;
+        const url = withBasePath(storageUrl);
         if (key) {
             const manifest = await readManifest(uploadDir);
             manifest[key] = url;

@@ -3,6 +3,7 @@
 
 import { useRouter } from 'next/navigation';
 import LanguageSwitcher from '@/components/LanguageSwitcher';
+import { withBasePath } from '@/lib/paths';
 
 export default function LandingClient({ dict, lang }) {
     const router = useRouter();
@@ -90,7 +91,7 @@ export default function LandingClient({ dict, lang }) {
                         </div>
                         <div className="flex-1 w-full max-w-[600px]">
                             <div className="relative rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-2xl">
-                                <img alt="Dashboard Mockup" className="w-full h-auto object-cover" src="/dashboard-mockup.png" />
+                                <img alt="Dashboard Mockup" className="w-full h-auto object-cover" src={withBasePath('/dashboard-mockup.png')} />
                                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent"></div>
                             </div>
                         </div>
