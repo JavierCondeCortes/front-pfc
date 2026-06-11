@@ -375,8 +375,8 @@ function ResourceFolderModal({ documents, liquids, maintenances, folders, onClos
 
 function Modal({ title, children, onClose }) {
     return (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-slate-950/60 p-4 backdrop-blur-sm">
-            <div className="flex min-h-full items-start justify-center sm:items-center">
+        <div className="fixed inset-0 z-50 h-[100dvh] overflow-y-scroll overscroll-contain bg-slate-950/60 p-4 backdrop-blur-sm">
+            <div className="flex min-h-full items-start justify-center lg:items-center">
                 <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-4xl overflow-y-auto rounded-xl border border-slate-200 bg-white shadow-2xl dark:border-slate-800 dark:bg-slate-900">
                     <div className="p-5 border-b border-slate-100 dark:border-slate-800 flex items-center justify-between gap-4">
                         <h2 className="text-xl font-black truncate">{title}</h2>

@@ -98,8 +98,8 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 overflow-y-auto bg-black/40 p-4 backdrop-blur-sm sm:p-6">
-            <div className="flex min-h-full items-start justify-center sm:items-center">
+        <div className="fixed inset-0 z-50 h-[100dvh] overflow-y-scroll overscroll-contain bg-black/40 p-4 backdrop-blur-sm sm:p-6">
+            <div className="flex min-h-full items-start justify-center lg:items-center">
                 <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-3xl overflow-y-auto rounded-2xl border border-primary/30 bg-white p-5 shadow-2xl dark:bg-slate-900 sm:my-6 sm:p-8">
                     <div className="flex items-start justify-between gap-4 mb-6">
                         <div>
