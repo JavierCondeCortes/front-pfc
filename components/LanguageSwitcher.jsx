@@ -10,14 +10,20 @@ const LANGUAGES = [
     { code: 'jp', label: '日本語' },
 ];
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export default function LanguageSwitcher({ lang, className = '' }) {
     const pathname = usePathname();
 
     const changeLanguage = (nextLang) => {
         if (typeof window !== 'undefined') localStorage.setItem('preferred_language', nextLang);
-        const parts = pathname.split('/');
+        const pathWithoutBase = BASE_PATH && pathname.startsWith(BASE_PATH)
+            ? pathname.slice(BASE_PATH.length) || '/'
+            : pathname;
+        const parts = pathWithoutBase.split('/');
         parts[1] = nextLang;
-        window.location.assign(parts.join('/') || `/${nextLang}/home`);
+        const nextPath = parts.join('/') || `/${nextLang}/home`;
+        window.location.assign(`${BASE_PATH}${nextPath}`);
     };
 
     return (
