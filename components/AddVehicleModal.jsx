@@ -98,10 +98,10 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
     if (!isOpen) return null;
 
     return (
-        <div className="fixed inset-0 z-50 h-[100dvh] overflow-y-scroll overscroll-contain bg-black/40 p-4 backdrop-blur-sm sm:p-6">
-            <div className="flex min-h-full items-start justify-center lg:items-center">
-                <div className="my-4 max-h-[calc(100dvh-2rem)] w-full max-w-3xl overflow-y-auto rounded-2xl border border-primary/30 bg-white p-5 shadow-2xl dark:bg-slate-900 sm:my-6 sm:p-8">
-                    <div className="flex items-start justify-between gap-4 mb-6">
+        <div className="fixed inset-0 z-50 h-[100dvh] overflow-hidden bg-black/40 p-4 backdrop-blur-sm sm:p-6">
+            <div className="flex h-full items-start justify-center lg:items-center">
+                <div className="flex h-full max-h-[calc(100dvh-2rem)] w-full max-w-3xl flex-col overflow-hidden rounded-2xl border border-primary/30 bg-white p-5 shadow-2xl dark:bg-slate-900 sm:p-8 lg:h-auto lg:max-h-[calc(100dvh-3rem)]">
+                    <div className="shrink-0 flex items-start justify-between gap-4 mb-6">
                         <div>
                             <h2 className="text-2xl font-black text-primary uppercase tracking-tight">
                                 {isEditing ? t('vehicles.form.edit_title', 'Editar vehiculo') : t('vehicles.form.add_title', 'Agregar vehiculo')}
@@ -113,27 +113,27 @@ export default function AddVehicleModal({ isOpen, onClose, onSuccess, vehicle = 
                         </button>
                     </div>
 
-                    <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    {formError && <div className="md:col-span-2"><AlertItem type="error" message={formError} /></div>}
+                    <form onSubmit={handleSubmit} className="grid min-h-0 flex-1 touch-pan-y grid-cols-1 gap-4 overflow-y-auto overscroll-contain pr-1 [-webkit-overflow-scrolling:touch] md:grid-cols-2">
+                        {formError && <div className="md:col-span-2"><AlertItem type="error" message={formError} /></div>}
 
-                    <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 items-center rounded-xl border border-slate-200 dark:border-slate-800 p-4">
-                        <div className="aspect-video rounded-lg bg-slate-100 dark:bg-slate-800 overflow-hidden flex items-center justify-center">
-                            {photoPreview ? (
-                                <img src={photoPreview} alt="Vista previa" className="w-full h-full object-cover" />
-                            ) : (
-                                <span className="material-symbols-outlined text-4xl text-slate-400">directions_car</span>
-                            )}
+                        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-[180px_1fr] gap-4 items-center rounded-xl border border-slate-200 dark:border-slate-800 p-4">
+                            <div className="aspect-video rounded-lg bg-slate-100 dark:bg-slate-800 overflow-hidden flex items-center justify-center">
+                                {photoPreview ? (
+                                    <img src={photoPreview} alt="Vista previa" className="w-full h-full object-cover" />
+                                ) : (
+                                    <span className="material-symbols-outlined text-4xl text-slate-400">directions_car</span>
+                                )}
+                            </div>
+                            <FormField label={t('vehicles.form.photo', 'Foto del coche')}>
+                                <input
+                                    name="photo"
+                                    type="file"
+                                    accept="image/*"
+                                    onChange={async (event) => setPhotoPreview(await readImageFile(event.target.files?.[0]))}
+                                    className="block w-full text-sm text-slate-500 file:mr-4 file:rounded-lg file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-bold file:text-white"
+                                />
+                            </FormField>
                         </div>
-                        <FormField label={t('vehicles.form.photo', 'Foto del coche')}>
-                            <input
-                                name="photo"
-                                type="file"
-                                accept="image/*"
-                                onChange={async (event) => setPhotoPreview(await readImageFile(event.target.files?.[0]))}
-                                className="block w-full text-sm text-slate-500 file:mr-4 file:rounded-lg file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-bold file:text-white"
-                            />
-                        </FormField>
-                    </div>
 
                     <FormField label={t('vehicles.form.brand', 'Marca')}>
                         <select
